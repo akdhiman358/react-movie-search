@@ -1,9 +1,12 @@
+
 *{
   box-sizing: border-box;
-}
-body{
   margin: 0;
   padding: 0;
+}
+body{
+  font-family: 'Cute Font', cursive;
+  background-color: #d7fae0;
 }
 
 .container{
@@ -24,8 +27,50 @@ label{
   text-transform: uppercase;
 }
 input[type=text],button{
-  padding: 1rem ;
-  margin-bottom: 1rem;
+  padding: 0.8rem ;
+  margin-bottom: 0.8rem;
   border-radius: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
+button{
+  margin-bottom: 0;
+}
+button:active {
+  background-image: linear-gradient(to bottom, #97e8ae, #3be36b);
+}
+.card-list{
+  margin: 0;
+}
+.card{
+  padding: 2rem;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.25);
+  margin: 2rem;
+  background-color: #e3fcea;
+}
+.card--image{
+  display: block;
+  margin:0 auto;
+}
+small{
+  font-size: 1rem;
+  
+}
+.card-title{
+  font-size:2.5rem;
+  
+}
+.card p{
+  margin: 0.5rem 0;
+}
+.gray{
+  font-size: 1.2rem;
+  color:#4a4d4b;
+}
+@media(min-width:768px){
+  .form{
+    width: 70vw;
+  }
+  .card{
+    width: 50vw;
+  }
+  }
